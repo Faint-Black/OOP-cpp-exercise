@@ -1,0 +1,5 @@
+# CMake output files
+build/
+
+# Clang output files
+.cache/
