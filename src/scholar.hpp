@@ -16,4 +16,13 @@ public:
     void print(void) override;
 
     unsigned long get_id(void);
+
+    enum class Subject
+    {
+        CALCULUS,
+        PHYSICS,
+        ALGEBRA,
+        PROGRAMMING,
+    };
+    std::string string_from_subject(Scholar::Subject subject);
 };

@@ -2,6 +2,7 @@
 #include <vector>
 
 #include "person.hpp"
+#include "professor.hpp"
 #include "scholar.hpp"
 
 int
@@ -12,6 +13,7 @@ main()
     population.push_back(std::make_unique<Scholar>("Bar", 20));
     population.push_back(std::make_unique<Scholar>("Baz", 30));
     population.push_back(std::make_unique<Scholar>("Qux", 40));
+    population.push_back(std::make_unique<Professor>("John", 40, Scholar::Subject::CALCULUS));
 
     for (const auto& elem : population)
     {
